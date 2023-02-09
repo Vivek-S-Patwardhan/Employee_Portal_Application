@@ -1,15 +1,16 @@
 # Employee_Portal_Application(EPA)
  - This is a application created for the Employees and HR's.
  - This application lets the Hr to register themselves with their details.
- - And allows to add the employee details.
+ - And allows to Add, Update the employee details.
  
 ## EPA main features 
- - Provides authentication for the HR.
- - The application allows Hr's to login anytime with their credentials.
+ - Provides authentication for the HR and Employee.
+ - The application allows to login anytime with the credentials.
  - Application then allows Hr to add the employee details.
  - Hr can also use an option to update the Employee details.
  - Multiple Hr's can use their credentials to add the new employees.
  - At last Hr can be able to logout, for security reasons.
+ - Employee can login and check the profile page.
  - Roles are given according to their registration ie either Hr or Employee.
  
 ## Prerequisites 
@@ -36,12 +37,13 @@
 
 
 ## Login/Register  
- - For the first time , click on Register here.
+ - For the Hr to register for the first time , click on Register here.
  - Enter the details for the HR -> submit.
  - Try to login for the same using the given credentials.
  - After login is successful -> Add Employee page can be opened.
  - Add Employee details in the form -> Save Employee Details.
  - You can also Update the Details of the Employee.
+ - After this Employee can also login with the credentials and check the profile page.
 
 
 ## DataBase  
