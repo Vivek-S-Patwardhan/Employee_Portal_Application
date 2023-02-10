@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import net.javaguides.springboot.dto.EmployeeUpdateDto;
@@ -21,6 +22,7 @@ import net.javaguides.springboot.service.EmployeeService;
 import net.javaguides.springboot.service.UserService;
 
 @Controller
+@RequestMapping("/hr")
 public class EmployeeController {
 
 	@Autowired
@@ -29,7 +31,7 @@ public class EmployeeController {
 	private EmployeeService employeeService;
 	
 	// display list of employees
-	@GetMapping("/")
+	@GetMapping("")
 	
 	public String viewHomePage(Model model) {
 		//get authentication principal from security context holder.
@@ -55,7 +57,7 @@ public class EmployeeController {
 		// save employee to database
 	employeeService.saveEmployee(employee);
 		
-		return "redirect:/";
+		return "redirect:/hr";
 	}
 	
 	@GetMapping("/showFormForUpdate/{id}")
@@ -76,7 +78,7 @@ public class EmployeeController {
 		if(!updated) {
 			return "redirect:/error";
 		}
-		return "redirect:/";
+		return "redirect:/hr";
 	}
 	
 	
